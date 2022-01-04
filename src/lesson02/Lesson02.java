@@ -17,28 +17,16 @@ public class Lesson02 {
 //        System.out.println(Arrays.toString(fonts));
 
         JFrame jFrame = getFrame();
-        Font font = new Font("Rockwell", Font.BOLD, 20);
         jFrame.add(new MyComponent());
 
 
     }
 
-    private static JFrame getFrame() {
-        JFrame jFrame = new JFrame() {
-        };
-        jFrame.setVisible(true);
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jFrame.setSize(700, 500);
-        jFrame.setLocationRelativeTo(null);
-        jFrame.setTitle("Приложение 2");
-
-        return jFrame;
-    }
 
     static class MyComponent extends JComponent {
         @Override
         protected void paintComponent(Graphics g) {
-            Font font = new Font("Rockwell", Font.BOLD, 20);
+            Font font = new Font("Helvetica", Font.BOLD, 20);
             Graphics2D g2 = (Graphics2D) g;
             g2.setFont(font);
             g2.drawString("Привет!", 20, 40);
@@ -65,6 +53,19 @@ public class Lesson02 {
 
 
         }
+    }
+
+    private static JFrame getFrame() {
+        JFrame jFrame = new JFrame() {
+        };
+        jFrame.setFont(Font.getFont(Font.SERIF));       // for Windows (Cyrillic problem fix)
+        jFrame.setVisible(true);
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setSize(700, 500);
+        jFrame.setLocationRelativeTo(null);
+        jFrame.setTitle("Приложение 2");
+
+        return jFrame;
     }
 
 

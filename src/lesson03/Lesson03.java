@@ -23,6 +23,7 @@ public class Lesson03 {
     private static JFrame getFrame() {
         JFrame jFrame = new JFrame() {
         };
+//        jFrame.setFont(Font.getFont(Font.SERIF));       // for Windows (Cyrillic problem fix)
         jFrame.setVisible(true);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setSize(700, 500);

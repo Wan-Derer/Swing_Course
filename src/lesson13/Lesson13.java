@@ -38,7 +38,7 @@ public class Lesson13 {
         fileMenu.addSeparator();
         JMenuItem exitItem = fileMenu.add(new JMenuItem("Выход"));
         exitItem.addActionListener(e -> System.exit(0));
-        exitItem.setAccelerator(KeyStroke.getKeyStroke(OS.equals("MAC") ? "meta Q" : "alt F4"));
+        exitItem.setAccelerator(KeyStroke.getKeyStroke(OS.equals("MAC") ? "meta Q" : "ctrl Q"));
 
         editMenu.add(new JMenuItem("Вырезать"));
         editMenu.add(new JMenuItem("Копировать"));

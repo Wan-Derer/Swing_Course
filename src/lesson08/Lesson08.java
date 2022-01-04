@@ -21,8 +21,8 @@ public class Lesson08 {
         AbstractAction action = new MyAction();
         jButton.addActionListener(action);
 
-        KeyStroke keyStroke = KeyStroke.getKeyStroke("shift B");
-        InputMap inputMap = jPanel.getInputMap(JComponent.WHEN_FOCUSED);
+        KeyStroke keyStroke = KeyStroke.getKeyStroke("ctrl B");
+        InputMap inputMap = jPanel.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
         inputMap.put(keyStroke, "changeColor");
         ActionMap actionMap = jPanel.getActionMap();
         actionMap.put("changeColor", action);
