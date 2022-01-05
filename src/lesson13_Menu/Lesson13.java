@@ -3,7 +3,7 @@ https://www.youtube.com/watch?v=TVDUomyZ2Dk&list=PL786bPIlqEjTN-Sy8uMLQ6s85qNxP1
 Menu
  */
 
-package lesson13;
+package lesson13_Menu;
 
 import javax.swing.*;
 
