@@ -1,6 +1,6 @@
 /*
-https://www.youtube.com/watch?v=YjD90CJBWTo&list=PL786bPIlqEjTN-Sy8uMLQ6s85qNxP1hAp&index=19
-No Layout
+https://www.youtube.com/watch?v=YjD90CJBWTo&list=PL786bPIlqEjTN-Sy8uMLQ6s85qNxP1hAp&index=20
+Custom Layout
  */
 
 package lesson20_Custom_Layout;
